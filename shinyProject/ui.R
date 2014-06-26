@@ -4,7 +4,7 @@ shinyUI(pageWithSidebar(
 
   sidebarPanel(
     conditionalPanel(condition="input.conditionedPanels == 'Tables'",  
-           numericInput("obs", "Number of observations to view:", 10),
+           numericInput("obs", "Number of observations to view:", min = 0, max = nrow(mtcars), value = 5),
            selectInput(inputId = "var",
                        label = "Select a variable to display the summary statistics",
                        choices = names(mtcars),
@@ -19,7 +19,8 @@ shinyUI(pageWithSidebar(
                        label = "Select input variables",
                        choices = c("wt", "qsec", "am", "disp"),
                        selected = "wt")
-    )                     
+    ),                   
+    h5("See pdf documentation and R codes at https://github.com/sandipan/DevelopingDataProducts")
   ),
 
   mainPanel(

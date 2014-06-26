@@ -1,3 +1,6 @@
+# see documentation and code at github
+# https://github.com/sandipan/DevelopingDataProducts/tree/master/shinyProject
+
 library(shiny)
 library(ggplot2)
 
