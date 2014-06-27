@@ -212,18 +212,21 @@ external link.</li>
 <li>server.R</li>
 <li>ui.R</li>
 </ul></li>
-<li><p>The application is meant to provide a simple visualization for the mtcars datse.<br/>
+<li><p>The application is meant to provide a simple visualization for the mtcars 
+dataset.<br/>
 There are two tabs on the web application. </p></li>
-<li><p>The first tab displays some reactive displays of the values of the variable selected from the dropdown. It also displays the summary of the selected variable.
+<li><p>The first tab displays some reactive displays of the values of the variable 
+selected from the dropdown. 
+It also displays the summary of the selected variable.
 The number of data tuples displayed can be changed as well.</p></li>
-<li><p>The second tab displays linear regression (OLS) model fits for different independent variables 9can be selected from drop down list). Also a 3rd variable value is shown by color coding, which can also be selected from another drop down.
-Accordinlgy the OLS model changes.</p></li>
+<li><p>The second tab displays linear regression (OLS) model fits for different 
+independent variables that can be selected from drop down list. 
+Also a 3rd variable value is shown by color coding, which can also be selected from another drop down. Accordinlgy the OLS model changes.</p></li>
 <li><p>The below R code snippet / the plot output in the appendix show the figures that are shown reactively.</p></li>
 </ul>
 
 <pre><code class="r"># R code
 library(ggplot2)
-col &lt;- mtcars$wt
 p &lt;- qplot(wt, mpg, data=mtcars, geom=c(&quot;point&quot;, &quot;smooth&quot;), 
     method=&quot;lm&quot;, formula=y~x, color=cyl, 
     main=&quot;Linear Regression (OLS) Fit&quot;, 
