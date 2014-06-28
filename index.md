@@ -47,11 +47,10 @@ summary(mtcars$mpg)
 
 ```r
 library(ggplot2)
-p <- qplot(wt, mpg, data=mtcars, geom=c("point", "smooth"), 
-    method="lm", formula=y~x, color=cyl, 
-    main="Linear Regression (OLS) Fit", 
-    xlab="wt", ylab="mpg")
-p
+qplot(wt, mpg, data=mtcars, geom=c("point", "smooth"), 
+method="lm", formula=y~x, color=cyl, 
+main="Linear Regression (OLS) Fit", 
+xlab="wt", ylab="mpg")
 ```
 
 ![plot of chunk chunkLabel1](assets/fig/chunkLabel1.png) 
@@ -63,14 +62,12 @@ p
 
 ```r
 library(ggplot2)
-p <- qplot(qsec, mpg, data=mtcars, geom=c("point", "smooth"), 
-    method="lm", formula=y~x, color=cyl, 
-    main="Linear Regression (OLS) Fit", 
-    xlab="qsec", ylab="mpg")
-p
+qplot(qsec, mpg, data=mtcars, geom=c("point", "smooth"), 
+method="lm", formula=y~x, color=cyl, 
+main="Linear Regression (OLS) Fit", 
+xlab="qsec", ylab="mpg")
 ```
 
 ![plot of chunk chunkLabel2](assets/fig/chunkLabel2.png) 
 
---- 
 
