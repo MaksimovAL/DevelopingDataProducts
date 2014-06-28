@@ -86,11 +86,10 @@ will be reactive w.r.t. the variable selected. </p></li>
 </ul>
 
 <pre><code class="r">library(ggplot2)
-p &lt;- qplot(wt, mpg, data=mtcars, geom=c(&quot;point&quot;, &quot;smooth&quot;), 
-    method=&quot;lm&quot;, formula=y~x, color=cyl, 
-    main=&quot;Linear Regression (OLS) Fit&quot;, 
-    xlab=&quot;wt&quot;, ylab=&quot;mpg&quot;)
-p
+qplot(wt, mpg, data=mtcars, geom=c(&quot;point&quot;, &quot;smooth&quot;), 
+method=&quot;lm&quot;, formula=y~x, color=cyl, 
+main=&quot;Linear Regression (OLS) Fit&quot;, 
+xlab=&quot;wt&quot;, ylab=&quot;mpg&quot;)
 </code></pre>
 
 <p><img src="assets/fig/chunkLabel1.png" alt="plot of chunk chunkLabel1"> </p>
@@ -106,22 +105,14 @@ p
 </ul>
 
 <pre><code class="r">library(ggplot2)
-p &lt;- qplot(qsec, mpg, data=mtcars, geom=c(&quot;point&quot;, &quot;smooth&quot;), 
-    method=&quot;lm&quot;, formula=y~x, color=cyl, 
-    main=&quot;Linear Regression (OLS) Fit&quot;, 
-    xlab=&quot;qsec&quot;, ylab=&quot;mpg&quot;)
-p
+qplot(qsec, mpg, data=mtcars, geom=c(&quot;point&quot;, &quot;smooth&quot;), 
+method=&quot;lm&quot;, formula=y~x, color=cyl, 
+main=&quot;Linear Regression (OLS) Fit&quot;, 
+xlab=&quot;qsec&quot;, ylab=&quot;mpg&quot;)
 </code></pre>
 
 <p><img src="assets/fig/chunkLabel2.png" alt="plot of chunk chunkLabel2"> </p>
 
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-5" style="background:;">
-  <article data-timings="">
-    
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -152,12 +143,6 @@ p
       <a href="#" target="_self" rel='tooltip' 
         data-slide=4 title=''>
          4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title=''>
-         5
       </a>
     </li>
   </ul>
